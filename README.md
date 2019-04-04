@@ -10,7 +10,7 @@ If you are a fellow developer feel free to leave a message on one of my social m
 ### * Prospective employers & Business partners
 If you would like to make a job offer, business proposal or have me work on your team please feel free to fill the [contact form on my website](https://yurandeveloper.com/#contact) or leave a message on one of the bellow mentioned social media profiles.
 
-##Social Media Links
+## Social Media Links
 Please find bellow links to my social media portfolios
 * [Linkedin](https://www.linkedin.com/in/yuran-pereira-334902183)
 * Twitter  - [@yuranpereira](https://twitter.com/yuranpereira)
