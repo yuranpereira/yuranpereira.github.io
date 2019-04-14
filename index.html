@@ -1,0 +1,196 @@
+<!Doctype html>
+<html>
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="resources/css/normalize.css">
+  <link rel="stylesheet" href="resources/css/grid.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="resources/css/menu.css">
+  <!--link rel="stylesheet" href="resources/css/responsive.css"-->
+  
+  <link rel="icon" href="resources/img/favicon.png" sizes="16x16">
+  <title>Yuran Pereira</title>
+</head>
+<body onload="pageLoader()">
+    
+    <!-- Page Loader -->
+    <div class="page-loader-container" id="page-loader">
+      <div class="page-loader">
+        <img src="resources/img/wolf.svg" />
+        <p>Loading please wait...</p>
+      </div>
+    </div>
+<div id="main-page" class="fade-in">
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <div class="menu-btn" onclick="toggleMenu()">
+        <li class="one"></li>
+        <li class="two"></li>
+        <li class="three"></li>
+      </div>
+      
+      <nav class="nav" id="nav">
+        <!-- Close nav button --->
+        <a href="javascript:void(0)" class="closeMenu" onclick="closeMenu()">&times;</a>
+        
+        <!-- @NOTE: the onclicks are used for touch devices since I'm lazy and didnt use <a> tags -->
+        <div class="Menu">
+          <ul class="Menu-list" data-offset="">
+            <li class="Menu-list-item" data-offset="20" onclick="location='#home'; closeMenu()">
+              Home
+              <span class="Mask"><span>Home</span></span>
+              <span class="Mask"><span>Home</span></span>
+            </li>
+            <li class="Menu-list-item" data-offset="16" onclick="location='#portfolio'; closeMenu()">
+              Portfolio
+              <span class="Mask"><span>Portfolio</span></span>
+              <span class="Mask"><span>Portfolio</span></span>
+            </li>
+            <li class="Menu-list-item" data-offset="12" onclick="location='#about'; closeMenu()">
+              About
+              <span class="Mask"><span>About</span></span>
+              <span class="Mask"><span>About</span></span>
+            </li>
+            <li class="Menu-list-item" data-offset="8" onclick="location='blog'; closeMenu()">
+              Blog
+              <span class="Mask"><span>Blog</span></span>
+              <span class="Mask"><span>Blog</span></span>
+            </li>
+            <li class="Menu-list-item" data-offset="8" onclick="location='#contact'; closeMenu()">
+              Contact
+              <span class="Mask"><span>Contact</span></span>
+              <span class="Mask"><span>Contact</span></span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div class="contact-btn"><a href="#contact">Contact</a></div>
+    </div>
+  </header>
+  
+  <section class="banner">
+    <div class="banner-container  center">
+      <img src="resources/img/wolf.svg">
+      <h1>Hey, I'm <span class="green">Yuran Pereira</span>.</h1>
+      <h2>I am a <span class="green">full stack</span> web developer.</h2>
+    </div>
+  </section>
+  <div class="social">
+    <div class="social-container center">
+      <a href="https://www.linkedin.com/in/yuran-pereira-334902183" title="Linked in"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/yurandeveloper" title="Github"><i class="fab fa-github"></i></a>
+      <a href="#" title="Blog"><i class="fas fa-blog"></i></a>
+      <a href="http://www.twitter.com/yuranpereira" title="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+  
+  <!-- Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio-container">
+      <h2 class="section-title">PORTFOLIO<span class="green">.</span></h2>
+      <p>Here are some of my recent projects.  <a href="mailto:yurandeveloper@gmail.com">Email Me</a>.</p>
+      
+      <div class="websites-display">
+        <div class="row">
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Abbout -->
+  <section class="about" id="about">
+    <div class="about-container container">
+      <h2 class="section-title"><span class="green">WHO</span> AM I?</h2>
+      <p>My name is Yuran Pereira, I am a full stack web developer from Mozambique. I develop WordPress and Node based websites that help businesses and brands create a better image online.
+Over the past 7 years I have worked on multiple web projects all the way from Ecommerce stores to agencies and portfolio websites.
+See bellow a list of technologies that I have worked with:</a></p>
+    </div>
+  </section>
+  <section class="skills">
+    <div class="container">
+      <div class="skills-table row">
+      
+        <div class="col-6 col-12-sm skills-col skills-col1">
+          <img src="resources/img/frontend.png"/>
+          <h3>Front End</h3>
+          <p>Bellow are a list of front end technologies and tools that I have used on my projects.</p>
+          <ul>
+            <h4 class="green">Languages</h4>
+            <li>HTML/HTML5</li>
+            <li>CSS/CSS3</li>
+            <li>Javascript</li>
+            <li>(ES6)</li>
+          </ul>
+          
+          <ul>
+            <h4 class="green">Tools&Frameworks</h4>
+            <li>Bootstrap</li>
+            <li>w3.css</li>
+            <li>JQuery</li>
+            <li>React Js</li>
+            <li>Anime Js</li>
+          </ul>
+        </div>
+        
+        <div class="col-6 col-12-sm skills-col">
+          <img src="resources/img/backend.png"/>
+          <h3>Back End</h3>
+          <p>See bellow a list of backend technologies that I have worked with.</p>
+          <ul>
+            <h4 class="green">Languages</h4>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Javascript</li>
+            <li>SQL</li>
+            <li>JSON</li>
+          </ul>
+          
+          <ul>
+            <h4 class="green">Tools&Frameworks</h4>
+            <li>WordPress</li>
+            <li>Django</li>
+            <li>Node Js</li>
+            <li>MySQL</li>
+            <li>Mongo Db</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-container container">
+      <h2 class="section-title">CONTACT <span class="green">ME</span></h2>
+      <p>Please fill the form bellow or <a href="mailto:yurandeveloper@gmail.com">Email Me</a></p>
+      <form class="contact-form" action="https://blog.yurandeveloper.com/send_mail/" method="POST">
+        <input type="text" name="name" placeholder="NAME" required>
+        <input type="email" name="real_contact" placeholder="EMAIL" required>
+        <input type="text" name="email" style="display: none;">
+        <input type="text" name="subject" placeholder="SUBJECT">
+        <textarea placeholder="MESSAGE" name="message" required></textarea>
+        <input type="submit" name="send" value="SEND" class="send">
+      </form>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="center">&copy;2019 <a href="https://www.linkedin.com/in/yuran-pereira-334902183">Yuran Pereira</a></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="resources/js/script.js"></script>

@@ -1,0 +1,383 @@
+/*
+*** yurandeveloper.com
+*** (c) Yuran Pereira 2019
+*
+*/
+/** Colours used
+* Creme BG - #FBF9F9
+* Dark Blue(body font etc) - #102D35 
+* Light Green - #34B7AA
+* Pure White  - #fff
+* Atlernative body type dark blue - #161620
+**/
+
+body {
+  background-color: #FBF9F9;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #FBF9F9;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #102D35;
+  outline: 1px solid slategrey;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #34B7AA;
+}
+a {
+  text-decoration: none;
+  color: #34B7AA;
+}
+li {
+  list-style: none;
+}
+a:hover {
+  opacity: 0.9;
+}
+/* Colours */
+.blue { color: #102D35 !important; }
+.green { color: #34B7AA !important; }
+
+/* Section Title */
+.section-title {
+  position: relative;
+  z-index: 0;
+}
+.section-title:after {
+  content: "";
+  background-color: #34B7AA;
+  border-radius: 25px;
+  bottom: -5px; left: 0; right: 0;
+  height: 5px;
+  margin: 0 auto;
+  position: absolute;
+  width: 35%;
+  z-index: 0; 
+}
+
+/** Page Loader **/
+.page-loader-container {
+  background-color: #FBF9F9;
+  display: table;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  z-index: 999999;
+}
+
+.page-loader {    
+  display: table-cell;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  width: 64px;
+}
+
+.page-loader img {
+  height: auto;
+  width: 64px;
+  transform: translateY(0px);
+  -webkit-animation: bouncing-logo 1.5s infinite;
+  animation: bouncing-logo 1.5s infinite;
+}
+
+.page-loader p {
+  -webkit-animation: flashing-text 2s infinite;
+  animation: flashing-text 2s infinite;
+}
+
+@keyframes bouncing-logo {
+  0% { transform: translateY(0px); }
+  25% { transform: translateY(-10px); }
+  50% { transform: translateY(0px); }
+  75% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes flashing-text {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+#main-page {
+  display: none;
+}
+
+.fade-in {
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+
+/** Header **/
+header {
+  background-color: #FBF9F9;
+  top: 0;
+  max-width: 100%;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-scroll {
+  box-shadow: 0px 1px 8px #00000063;
+}
+
+.header-container {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.menu-btn {
+  width: 65px;
+  height: 50px;
+  position: relative;
+}
+
+.menu-btn li {
+  background-color: #34B7AA;
+  border-radius: 25px;
+  height: 9px;
+  margin-bottom: 5px;
+  position: absolute;
+  /*right: initial;*/
+  transition: right 1s ease;
+}
+
+.one { width: 100%; }
+.two { 
+  width: 60%;
+  top: 14px; 
+  left: 0;
+}
+.three { 
+  width: 40%;
+  top:28px;
+  left: 0;
+}
+
+.menu-btn:hover {
+  cursor: pointer;
+}
+
+.menu-btn:hover li,
+.menu-btn li:hover {
+  /*position: absolute;*/
+  /*right: 0;*/
+}
+
+.menu-btn:hover .two {
+    left: 40%;
+    transition: all 0.2s linear;
+}
+
+.menu-btn:hover .three {
+    margin-left: 60%;
+    transition: all 0.4s linear;
+}
+
+.contact-btn {
+  background-color: #34B7AA;
+  border-radius: 25px;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+}
+
+.contact-btn a {
+  color: #fff;
+  display: table-cell;
+  font-size: 18px;
+  /*font-weight: bold;*/
+  height: inherit;
+  vertical-align: middle;
+  width: inherit;
+}
+
+.contact-btn:hover {
+  -webkit-box-shadow: 0 10px 10px -10px #000000;
+   -moz-box-shadow: 0 10px 10px -10px #000000;
+        box-shadow: 0 10px 10px -10px #000000;
+  opacity: 1;
+}
+
+/** Banner **/
+.banner h1, 
+.banner h2 {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.banner h2 {
+  font-weight: 300;
+}
+
+.banner {
+  display: flex;
+  display: -ms-flexbox;
+	display: -webkit-flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+.banner img {
+  height: 173px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 176px;
+}
+
+/* Social */
+.social {
+  align-items: center;
+  background-color: #102D35;
+  bottom: 0;
+  color: #fff;
+  display: flex;  
+  height: 10vh;
+  width: 100%;
+}
+
+.social-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.social a {
+  display: inline;
+  margin-right: 20px;
+}
+
+.social i {
+  font-size: 28px;
+}
+
+.social a, 
+.social a i {
+  color: #fff;
+}
+
+.social a:hover i {
+  color: #34B7AA;
+}
+
+/** Portfolio Section **/
+.portfolio {}
+
+.portfolio-container {
+  text-align: center;
+}
+/** About Section **/
+.about {
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.about-container {
+  text-align: center;
+}
+
+.skills {
+  width: 100%;
+  background-color: #fff;
+}
+
+.skills-table {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  top: -80px;
+  -webkit-box-shadow: 0 10px 10px -10px #000000;
+  -moz-box-shadow: 0 10px 10px -10px #000000;
+  box-shadow: 0 10px 10px -10px #000000;
+}
+
+.skills-col {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.skills-table .col-6 {
+  /*width: calc(46% - 2px);*/
+}
+
+.skills-col1 {
+  /*border-right: 1px solid #ccc;
+  padding-right: 2px;*/
+}
+
+.skills-col img {
+  width: 64px;
+  height: auto;
+}
+/** Contact Form **/
+.contact {
+  color: #fff;
+  background-color: #102D35;
+  margin-top: 20px;
+  text-align: center;
+  /*transform: skewY(-3deg);*/
+  padding: 50px 0px;
+  width: 100%;
+}
+
+.contact-container {
+  /*transform: skewY(3deg);*/
+}
+
+.contact-form {
+  width: 100%;
+}
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 100%;
+  padding: 10px;
+  width: 95%; 
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form .send {
+  color: #fff;
+  cursor: pointer;
+  background-color: #34B7AA;
+  font-weight: bold;
+  width: 150px;
+}
+
+.contact-form .send:hover {
+  -webkit-box-shadow: 0 10px 10px -10px #000000;
+  -moz-box-shadow: 0 10px 10px -10px #000000;
+  box-shadow: 0 10px 10px -10px #000000;
+}

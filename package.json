@@ -1,0 +1,26 @@
+{
+  "name": "yuran_pereira_portfolio",
+  "version": "1.0.0",
+  "description": "This is my personla portfolio website.",
+  "main": "resources/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch resources/scss -o resources/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuranDeveloper/yurandeveloper.github.io.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Yuran Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuranDeveloper/yurandeveloper.github.io/issues"
+  },
+  "homepage": "https://github.com/yuranDeveloper/yurandeveloper.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
