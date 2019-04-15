@@ -400,7 +400,7 @@ header {
   .banner h2 { font-size: 22px; }
   .social {}
   .social-container {
-    width: 100%;
+    width: auto;
   }
     
   .portfolio-container {
