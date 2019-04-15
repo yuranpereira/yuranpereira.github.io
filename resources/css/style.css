@@ -381,3 +381,33 @@ header {
   -moz-box-shadow: 0 10px 10px -10px #000000;
   box-shadow: 0 10px 10px -10px #000000;
 }
+
+@media only screen and (max-width: 796px) {
+    
+  .menu-btn { width: 60px; }  
+  .menu-btn li{
+    height: 9px;
+    margin-bottom: 5px;
+    position: absolute;
+  }
+  .menu-btn .two { top: 15px; }
+  .menu-btn .three { top: 30px; }
+  
+  .contact-btn { height: 35px; width: 110px; }
+  .contact-btn a { font-size: 14px; }
+  .banner img { height: 110px; width: 110px; }
+  .banner h1 { font-size: 28px; }
+  .banner h2 { font-size: 22px; }
+  .social {}
+  .social-container {
+    width: 100%;
+  }
+    
+  .portfolio-container {
+     width: 97%;
+  }
+    
+  .skills ul, .skills li {
+    padding: 0;
+  }
+}
