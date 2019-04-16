@@ -383,7 +383,11 @@ header {
 }
 
 @media only screen and (max-width: 796px) {
-    
+  
+  header {
+    padding: 5px 0px;
+  }
+  
   .menu-btn { width: 60px; }  
   .menu-btn li{
     height: 9px;
