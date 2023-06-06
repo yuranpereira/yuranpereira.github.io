@@ -15,4 +15,4 @@ Please find bellow links to my social media portfolios
 * [Linkedin](https://www.linkedin.com/in/yuran-pereira-334902183)
 * Twitter  - [@yuranpereira](https://twitter.com/yuranpereira)
 * Github   - [@yuranDeveloper](https://github.com/yuranDeveloper)
-* Website  - [yurandeveloper.com](https://yurandeveloper.com)
+* Website  - [yuranpereira.com](https://yuranpereira.com)
